@@ -42,3 +42,42 @@
 #search-bar>span>input{
     border: none;
 }
+
+
+#head-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#menu-opt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.opts>ul{
+  margin: 4px;
+  text-decoration: none;
+  border: 1px solid #000;
+}
+
+.item{
+    display: none;
+    position: absolute;
+}
+
+.opts{
+    display: flex;
+}
+
+.dropdown, .item{
+    list-style: none;
+}
+
+.dropdown:hover .item{
+  display: block;
+  background-color: rgb(224, 139, 12);
+ 
+}
