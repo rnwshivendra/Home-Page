@@ -54,13 +54,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #000;
+ 
 }
 
 .opts>ul{
   margin: 4px;
   text-decoration: none;
-  border: 1px solid #000;
 }
 
 .item{
@@ -80,4 +79,48 @@
   display: block;
   background-color: rgb(224, 139, 12);
  
+}
+
+
+/* carousel */
+
+#carousel{
+    margin-top: 30px;
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+}
+
+
+.img{
+    height: 100px;
+    width: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/21/59/tree-736875_640.jpg");
+}
+
+.img:hover{
+    background-image: url("https://cdn.pixabay.com/photo/2017/01/14/12/59/iceland-1979445_640.jpg");
+}
+
+/* banner */
+
+#banner{
+     height: 400px;
+     --mask:
+     radial-gradient(34.99px at 50% 48px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 51% repeat-x,
+     radial-gradient(34.99px at 50% -18px,#0000 99%,#000 101%) 50% 30px/120px calc(51% - 30px) repeat-x,
+     radial-gradient(34.99px at 50% calc(100% - 48px),#000 99%,#0000 101%) calc(50% - 60px) 100%/120px 51% repeat-x,
+     radial-gradient(34.99px at 50% calc(100% + 18px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px calc(51% - 30px) repeat-x;
+   -webkit-mask: var(--mask);
+           mask: var(--mask);
+    margin-top: 50px;
+    width: 100%;
+   border: 1px solid #000;
+}
+
+#banner>img::before{
+   
 }
